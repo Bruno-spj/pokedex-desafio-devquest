@@ -1,4 +1,4 @@
-# Pokémon Search App
+# Pokédex App
 
 ## Descrição
 

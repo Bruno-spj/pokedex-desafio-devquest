@@ -17,7 +17,7 @@ export const Header = () => {
         <Link to={'/'}>
           <Img src="/assets/pokeball.png" alt="Pokeball" />
         </Link>
-      
+        <Logo src="/assets/logo-pokemon.svg" alt="" />
         <StyledButtonToggler onClick={toggleTheme}>
           <Img src={theme === themes.light ? "/assets/sun.png" : "/assets/moon.png"} 
             alt={theme === themes.light ? "Sun" : "Moon"} />
@@ -36,10 +36,14 @@ const StyledButtonToggler = styled.button`
 `;
 
 const Img = styled.img`
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%
 `;
+
+const Logo = styled.img`
+  width: 200px;
+`
 
 const SectionHeader = styled.header`
   display: flex;
